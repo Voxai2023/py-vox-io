@@ -57,5 +57,6 @@ class VoxWriter(object):
 
         res += self._chunk(b'MAIN', b'', chunks)
 
-        with open(self.filename, 'wb') as f:
-            f.write(res)
+        return res
+        # with open(self.filename, 'wb') as f:
+        #    f.write(res)
